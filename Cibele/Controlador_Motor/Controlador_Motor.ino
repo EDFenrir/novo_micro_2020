@@ -98,7 +98,7 @@ void loop(){
  
 void coreTaskZero(){
   // Verifica se já passou 200 milisegundos
-  if((millis() - milliscoreTaskZero) < 200){
+  if((millis() - millisTarefa1) < 200){
     // Acende o led do pino 7
     digitalWrite(15, HIGH);
   }else{
@@ -106,8 +106,8 @@ void coreTaskZero(){
     digitalWrite(15, LOW);
   }
   // Verifica se já passou 400 milisegundos
-  if((millis() - milliscoreTaskZero) > 400){
-    milliscoreTaskZero = millis();
+  if((millis() - millisTarefa1) > 400){
+    millisTarefa1 = millis();
   }
 }
  
